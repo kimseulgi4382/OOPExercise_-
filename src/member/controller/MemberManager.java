@@ -59,22 +59,31 @@ public class MemberManager {
 		if(sw == 1) {
 			printOne(m[index]);
 		} else {
-			System.out.println("수정할 회원이 존재하지 않습니다.");
+			System.out.println("");
 		}
 	}
 
 	public void searchName() {
 		
-		System.out.println("검색할 이름을 입력하세요 : ");
+		System.out.println("검색할  이름을 입력하세요 : ");
 		String userName = sc.next();
+		int index = 0;
+		int sw = 0;
 		
 		for(int i = 0; i < ctn; i++) {
 			if(m[i].getUserName().equals(userName)) {
-				printOne(m[i]);
+				index = i;
+				sw = 1;
 				break;
 			} else {
-				System.out.println("검색하신 회원 정보가 존재하지 않습니다");
+				sw = 0;
 			}
+		}
+
+		if(sw == 1) {
+			printOne(m[index]);
+		} else {
+			System.out.println("수정할 회원이 존재하지 않습니다.");
 		}
 
 	}
