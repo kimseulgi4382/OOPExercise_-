@@ -57,6 +57,18 @@ public class MemberManager {
 	}
 
 	public void searchName() {
+		
+		System.out.println("검색할 이름을 입력하세요 : ");
+		String userName = sc.next();
+		
+		for(int i = 0; i < ctn; i++) {
+			if(m[i].getUserName().equals(userName)) {
+				printOne(m[i]);
+				break;
+			} else {
+				System.out.println("검색하신 회원 정보가 존재하지 않습니다");
+			}
+		}
 
 	}
 
