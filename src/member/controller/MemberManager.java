@@ -170,6 +170,8 @@ public class MemberManager {
 	}
 
 	public void updateEmail() {
+		
+		System.out.println("뭔지 모르겠다는....");
 
 	}
 
