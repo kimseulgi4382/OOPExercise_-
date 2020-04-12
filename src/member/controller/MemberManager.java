@@ -176,7 +176,7 @@ public class MemberManager {
 	}
 
 	public void deleteOne() {
-
+		System.out.println("이거 너무 어려운데ㅠㅠㅠㅠ");
 	}
 
 	public void deleteAll() {
