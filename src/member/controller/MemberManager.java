@@ -180,6 +180,8 @@ public class MemberManager {
 	}
 
 	public void deleteAll() {
+		
+		System.out.println("뭐냐고 이거, 왜 이모양이지");
 
 	}
 
